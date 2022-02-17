@@ -12,17 +12,17 @@ public abstract class Employee
         if(id<0)
             throw new InputMismatchException();
        var check= firstName.toCharArray();
-      /** for(int i :check)
+       for(var i :check)
        {
-           if(check[i]>'0'&&check[i]<'9')
+           if(i>'0'&&i<'9')
                throw new InputMismatchException();
        }
         check=lastName.toCharArray();
-        for(int i :check)
+        for(var i :check)
         {
-            if(check[i]>'0'&&check[i]<'9')
+            if(i>'0'&&i<'9')
                 throw new InputMismatchException();
-        }*/
+        }
         this.firstName = firstName;
         this.lastName = lastName;
         this.id = id;
@@ -40,9 +40,9 @@ public abstract class Employee
 
     public void setFirstName(String firstName) {
         var check= firstName.toCharArray();
-        for(int i :check)
+        for(var i :check)
         {
-            if(check[i]>'0'&&check[i]<'9')
+            if(i>'0'&&i<'9')
                 throw new InputMismatchException();
         }
         this.firstName = firstName;
@@ -53,12 +53,12 @@ public abstract class Employee
     }
 
     public void setLastName(String lastName) {
-      /**  var check= lastName.toCharArray();
-        for(int i :check)
+        var check= lastName.toCharArray();
+        for(var i :check)
         {
-            if(check[i]>'0'&&check[i]<'9')
+            if(i>'0'&&i<'9')
                 throw new InputMismatchException();
-        }*/
+        }
         this.lastName = lastName;
     }
 

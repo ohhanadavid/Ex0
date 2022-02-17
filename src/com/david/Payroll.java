@@ -22,14 +22,14 @@ try {
 
         if (i.getClass().getName() ==  BasePlusCommissionEmployee.class.getName()) {
 
-            var selery=(i.earnings() * 1.1);
-            System.out.println(selery);
+            var selery=((BasePlusCommissionEmployee)i).baseSalary*1.1;
+            ((BasePlusCommissionEmployee)i).setBaseSalary((float) selery);
         }
-        else {
+
             System.out.println(i.earnings());
-        }
+
     }
-}catch (Exception ex){System.out.print(ex.toString());}
+}catch (Exception ex){System.out.print(ex);}
 
     }
 
